@@ -1,0 +1,225 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+li{
+  list-style: none;
+}
+.main-content {
+  position: relative;
+
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+
+/* Header */
+
+header {
+  height: 64px;
+  width: 100%;
+
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  height: 32px;
+
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+
+
+/* Container 1 */
+
+#sign-up-section {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  flex-flow: column;
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+ .banner img{
+  float: left;
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  width: 60%;
+  height: 60%;
+   margin: 32px 24px 32px 24px;
+}
+
+#sign-up-cta h1 h2{
+  float: right;
+  display: list-item;
+  text-align: right;
+}
+.button{
+  float: right;
+  align-content: center;
+  justify-content: center;
+  width: 40%;
+height: auto;
+padding: 8px auto 8px auto;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Container 2 */
+
+.column.large {
+  width: 100%;
+}
+
+
+
+
+/* Container 3 */
+
+.products,
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  height: 9rem;
+  padding: 2rem 0;
+  margin: 32px;
+}
+
+.product-image img {
+  size: auto;
+}
+
+.description {
+
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+
+}
+
+
+
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+/* Container 4 */
+
+.column.large {
+  width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
